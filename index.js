@@ -12,7 +12,7 @@ const bot = new Botact({
 // User wrote any message
 bot.on(function (ctx) {
   console.log(ctx)
-
+  ctx.sendMessage(ctx.from_id, 'Hi, this is start!')
 })
  
 // Parser request body
