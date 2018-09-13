@@ -11,7 +11,7 @@ const bot = new Botact({
  
 // User wrote any message
 bot.on(function (ctx) {
-  console.log(ctx)
+  console.log(ctx.peer_id)
   ctx.sendMessage(ctx.peer_id, 'Hi, this is start!')
 })
  
