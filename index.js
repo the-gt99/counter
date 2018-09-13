@@ -10,8 +10,9 @@ const bot = new Botact({
  
  
 // User wrote any message
-bot.on(({ reply }) => {
-  reply('What?')
+bot.on(function (ctx) {
+  console.log(ctx)
+
 })
  
 // Parser request body
